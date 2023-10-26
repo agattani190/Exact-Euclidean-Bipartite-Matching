@@ -142,7 +142,7 @@ public class DivideAndConquerHungarianAlgorithm {
    * @param B - List of points in set B
    * @param b - Boundary
    */
-  void hungarianSearchUsingRandomSource(
+  void hungarianSearch(
     Point[] A,
     Point[] B,
     Boundary b,
@@ -158,7 +158,7 @@ public class DivideAndConquerHungarianAlgorithm {
       parent[i] = -1;
     }
 
-    // Distance from random source to itself is 0
+    // Distance from the source to itself is 0
     distance[m + idx + 1] = 0.0;
     double lMin = INFINITY;
     int freeMinDistanceIdxInA = -1;
@@ -424,7 +424,7 @@ public class DivideAndConquerHungarianAlgorithm {
         B[i].matchId = -2;
         continue;
       }
-      hungarianSearchUsingRandomSource(A, B, bNew, i);
+      hungarianSearch(A, B, bNew, i);
     }
   }
 

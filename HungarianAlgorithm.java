@@ -100,7 +100,7 @@ public class HungarianAlgorithm {
   }
 
   /**
-   * Augments the matching by 1 and updates the dual weights. Starts Dijsktras from a random free vertex of B
+   * Augments the matching by 1 and updates the dual weights.
    */
   private void hungarianSearch() {
     int n = 2 * N;
